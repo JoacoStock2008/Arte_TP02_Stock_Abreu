@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vox Natura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="Index.html"><img src="Img/Logo Vox Natura.png" alt="Logo"></a>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="MakeUp.html">Maquillaje</a></li>
+                    <li><a href="Perfumes.html">Perfumes</a></li>
+                    <li><a href="Cremas.html">Cremas</a></li>
+                    <li><a href="SobreNosotros.html">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class = "comprar">
+            <article>
+                <p>¡Retirá gratis en los 2 locales disponibles! <br> <a href="https://www.google.com/maps?ll=-34.519633,-58.474285&z=15&t=m&hl=es&gl=AR&mapclient=embed&q=Av.+del+Libertador+B1638BGA+Vicente+L%C3%B3pez+Provincia+de+Buenos+Aires">Ver local Vicente López</a> <a href="https://www.google.com/maps?ll=-34.588402,-58.410737&z=15&t=m&hl=es&gl=AR&mapclient=embed&cid=14387103044007500704">Ver local Palermo</a></p>
+            </article>
+        </section>
+
+        <section class="comprar">
+
+            <h1>Comprar</h1>
+
+            <div class = "divForms">
+
+                <div>
+                    <h3>Datos Personales</h3>
+                    <form action="">
+                        <input type="email" name = "correo" placeholder = "Correo electrónico*" required>
+                        <input type="text" name = "nombre" placeholder = "Nombre*" required>
+                        <input type="text" name = "apellido" placeholder = "Apellido*" required>
+                        <input type="number" name="dni" placeholder = "DNI* (sin puntos ni espacios)" required minlength = "8" maxlength = "8">
+                        <input type="number" name="telefono" placeholder = "Teléfono Ej: 1139921094" required minlength = "10" maxlength = "10" min = "1100000000" max = "1199999999">
+                        <input type="submit" value = "Continuar">
+                        <input type="reset" value="Restablecer">
+                    </form>
+                </div>
+    
+                <div>
+                    <h3>Envío</h3>
+                    <form action="">
+                        <input type="text" name = "calle" placeholder = "Calle*" required>
+                        <input type="number" name = "numero" placeholder = "Número*" required minlength = "1" maxlength = "5">
+                        <input type="number" name="piso" placeholder = "Piso">
+                        <input type="text" name="departamento" placeholder = "Departamento">
+                        <input type="number" name="codigoPostal" placeholder = "Código Postal*" required minlength = "4" maxlength = "4" min = "0000">
+                        <select name="provincia" required>
+                            <option value="" selected hidden>Provincia</option>
+                            <option value="BuenosAires">Buenos Aires</option>
+                            <option value="Salta">Salta</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="Cordoba">Córdoba</option>
+                            <option value="LaPampa">La Pampa</option>
+                        </select>
+                        <input type="text" name = "localidad" required placeholder = "Localidad*">
+                        <p><b>País:</b> Argentina</p>
+                        <input type="text" name = "telefono" placeholder = "Teléfono (8-15 dígitos) *" minlength = "8" maxlength = "15">
+                        <input type="checkbox" name = "infoEsIgual"> <span>La información de facturación y de entrega es la misma.</span> <!--No funciona-->
+                        <input type="checkbox" name="mayoDeEdad"> <span>Soy mayor de 18 años. *</span><!--No funciona-->
+                        <input type="submit" value = "Continuar">
+                        <input type="reset" value = "Restablecer">
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://www.instagram.com/"><img src="Img/Imágen Instagram.png" alt="Imágen Instagram"></a>
+            <a href="https://www.tiktok.com/es/"><img src="Img/Imágen Tiktok.png" alt="Imágen TikTok"></a>
+            <a href="https://x.com/?lang=es"><img src="Img/Imágen X.png" alt="Imágen X"></a>
+        </div>
+        <p>©2025 Vox Natura. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
