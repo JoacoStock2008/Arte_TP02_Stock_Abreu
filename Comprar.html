@@ -47,6 +47,7 @@
                         <input type="text" name = "apellido" placeholder = "Apellido*" required>
                         <input type="number" name="dni" placeholder = "DNI* (sin puntos ni espacios)" required minlength = "8" maxlength = "8">
                         <input type="number" name="telefono" placeholder = "Teléfono Ej: 1139921094" required minlength = "10" maxlength = "10" min = "1100000000" max = "1199999999">
+                        <p></p>
                         <input type="submit" value = "Continuar">
                         <input type="reset" value="Restablecer">
                     </form>
@@ -71,8 +72,13 @@
                         <input type="text" name = "localidad" required placeholder = "Localidad*">
                         <p><b>País:</b> Argentina</p>
                         <input type="text" name = "telefono" placeholder = "Teléfono (8-15 dígitos) *" minlength = "8" maxlength = "15">
-                        <input type="checkbox" name = "infoEsIgual"> <span>La información de facturación y de entrega es la misma.</span> <!--No funciona-->
-                        <input type="checkbox" name="mayoDeEdad"> <span>Soy mayor de 18 años. *</span><!--No funciona-->
+                        <p></p>
+                        <div class = "checkbox">
+                            <input type="checkbox" name = "infoEsIgual"> <span>La información de facturación y de entrega es la misma.</span> <!--No funciona-->
+                        </div>
+                        <div>
+                            <input type="checkbox" name="mayoDeEdad"> <span>Soy mayor de 18 años. *</span><!--No funciona-->
+                        </div>
                         <input type="submit" value = "Continuar">
                         <input type="reset" value = "Restablecer">
                     </form>
