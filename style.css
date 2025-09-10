@@ -232,11 +232,10 @@ section{
 .productos h1 {
     margin-bottom: 1%;
 }
-
 article {
     background-color: black;
-    margin-bottom: 3%;
-    font-weight: 500;
+    position: sticky;
+    top: 120px;
 }
 article p {
     color: white;
@@ -313,12 +312,20 @@ article p a:hover {
 .comprar article{
     width: 100%;
     height: auto;
+    position: sticky;
+    top: 120px;
+    padding: 0.7%;
+}
+.comprar article p{
+    padding: 0;
+    margin: 0;
 }
 .comprar h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 200%;
     font-weight: 600;
     padding-bottom: 2%;
+    margin-top: 3%;
 }
 .divForms{
     width: 100%;
@@ -355,6 +362,10 @@ article p a:hover {
     padding: 1.5%;
     margin: 1%;
 }
+.divForms div form input, .divForms div form select{
+    border: 1px solid black;
+    border-radius: 8px;
+}
 .checkbox{
     width: 100%;
     height: auto;
@@ -362,17 +373,30 @@ article p a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1%;
     box-shadow: none;
     border-radius: none;
     border: none;
 }
-.divForms div form span{
+.divForms div form input[type = "submit"], .divForms div form input[type = "reset"]{
+    width: 40%;
+    height: auto;
+    padding: 1.5%;
+    margin: 1%;
+    border: none;
+}
+.divForms div form input[type = "submit"]{
+    background-color: rgb(23, 207, 23);
+}
+.divForms div form input[type = "submit"]:hover{
+    background-color: rgb(8, 192, 8);
+}
+.divForms div form input[type = "reset"]{
+    background-color: rgb(226, 11, 11);
+}
+.divForms div form input[type = "reset"]:hover{
+    background-color: rgb(210, 0, 0);
+}
 
-}
-.divForms div form p{
-    
-}
 /*Termina Comprar.html*/
 
 /*Terminan los mains*/
